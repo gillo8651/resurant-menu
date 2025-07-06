@@ -1,0 +1,334 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('../images/background.jpg'); /* make sure path is correct */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #f30c46; /* green text globally */
+}
+
+
+/* Header */
+header {
+  background: #1a1a2e;
+  color: #f3f3f3;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header .logo {
+  height: 80px;
+  margin-bottom: 0.5rem;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin: 0.2rem 0;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: #f3f3f3;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f4c430;
+}
+
+/* Main Content */
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+main h2 {
+  color: #1a1a2e;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+main p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Button */
+button {
+  background-color: #f4c430;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  color: #1a1a2e;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #e6b800;
+}
+
+/* Menu Cards */
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 2rem auto;
+  max-width: 600px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #1a1a2e;
+  margin: 1rem 0 0.5rem;
+}
+
+.card p {
+  color: #666;
+  padding: 0 1rem;
+}
+
+.price {
+  font-weight: bold;
+  color: #f4c430;
+  padding: 0.5rem 1rem 1rem;
+  font-size: 1.2rem;
+}
+
+/* Category Buttons */
+.category-buttons {
+  margin: 1rem 0 2rem;
+}
+
+.category-buttons button {
+  margin: 0.3rem;
+  background: #1a1a2e;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.category-buttons button:hover,
+.category-buttons button.active {
+  background: #f4c430;
+  color: #1a1a2e;
+}
+
+.hidden {
+  display: none;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #00ff55;
+  padding: 2rem 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-content i {
+  color: #00ff55;
+  font-size: 1.2rem;
+}
+
+.footer a {
+  color: #00ff55;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #66ff99;
+}
+
+.footer .copyright {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 1rem;
+}
+
+.home-intro {
+  margin-top: 2rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #00ff55;
+  padding: 0 1rem;
+}
+
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e90d31; /* green */
+}
+
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 700px;
+  text-align: center;
+  color: #eb093a; /* green text */
+}
+
+
+.hero-overlay h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+  color: #e6b800;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.action-buttons button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.action-buttons button:first-child {
+  background-color: #00ff55; /* WhatsApp green */
+  color: #000;
+}
+
+.action-buttons .call-btn {
+  background-color: #fff;
+  color: #000;
+}
+
+
+.action-buttons button:hover {
+  opacity: 0.9;
+}
+
+.about-section {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 1rem 2rem;
+  background-color:rgba(0, 0, 0, 0.6);
+  border-left: 4px solid #faf60a;
+  border-radius: 8px;
+}
+
+.about-section h2 {
+  color: #00ff4c;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.about-section p {
+  color: #0cf06b;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #0917e0;
+}
+
+main p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+main button {
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 30px;
+  background-color: #00ff55;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+main button:hover {
+  background-color: #f5a30b;
+}
+
+iframe {
+  border-radius: 15px;
+  margin-top: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 255, 100, 0.2);
+}
+
+
